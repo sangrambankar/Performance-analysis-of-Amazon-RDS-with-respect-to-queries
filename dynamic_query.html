@@ -1,0 +1,19 @@
+<html>
+<h1>Welcome</h1>
+
+<form action = "/run_query" method ="post" enctype = "multipart/form-data">
+<label> Select a city</label>
+<br>
+<select id = 'place' name='CITY'>
+	
+ 	 {% for item in array :%}
+    		<option> {{item }}</option>
+  	 {% endfor %}
+</select>
+<select id = 'lm' name='LorM'>
+ <option>l</option>
+ <option>m</option>
+</select>
+<input type = "submit" value="find" />
+</form>
+</html>
